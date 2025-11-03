@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Grocery - Your Daily Needs</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Quicksand) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+   
+</head>
+<body class="bg-white">
+
+    <!-- Header Section -->
+    <header class="border-b">
+        <!-- Top Header -->
+        <div class="hidden lg:block border-b py-2 text-sm text-gray-500">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="flex space-x-6">
+                    <a href="#" class="header-top-link">About Us</a>
+                    <a href="#" class="header-top-link">My Account</a>
+                    <a href="#" class="header-top-link">Wishlist</a>
+                    <a href="#" class="header-top-link">Order Tracking</a>
+                </div>
+                <div class="flex items-center space-x-6"> 
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-globe"></i>
+                        <span>English</span>
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </div>
+                     <div class="flex items-center space-x-2">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>USD</span>
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="py-6">
+            <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+                <a href="#" class="text-3xl font-bold text-brand mb-4 md:mb-0">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i> Fast Grocery
+                </a>
+                <div class="w-full lg:w-1/2 order-3 lg:order-2 mt-4 lg:mt-0">
+                    <form class="flex border-2 border-brand rounded-md overflow-hidden">
+                        <select class="px-4 py-2 border-r text-gray-600 hidden md:block">
+                            <option>All Categories</option>
+                            <option>Fruits</option>
+                            <option>Vegetables</option>
+                        </select>
+                        <input type="text" placeholder="Search for items..." class="w-full px-4 py-3 focus:outline-none">
+                        <button type="submit" class="bg-brand text-white px-6">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="order-2 lg:order-3 flex items-center space-x-4">
+                      
+                    <a href="#" class="flex items-center space-x-1 text-gray-600 hover:text-brand">
+                        <i class="fas fa-shopping-cart text-2xl text-brand"></i>
+                        <span class="bg-brand text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">2</span>
+                        <span class="hidden md:block">Cart</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-1 text-gray-600 hover:text-brand">
+                        <i class="far fa-user text-2xl text-brand"></i>
+                        <span class="hidden md:block">Account</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="border-t hidden lg:block" style="background: #f5f5f5;">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="#" class="bg-brand  text-white px-6 py-4 font-bold flex items-center space-x-2">
+                        <i class="fas fa-th-large"></i>
+                        <span>Browse All Categories</span>
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </a>
+                    <div class="flex items-center space-x-8 ml-8 font-semibold text-gray-700">
+                        <a href="#" class="flex items-center space-x-1 hover:text-brand"><i class="fas fa-fire text-dark"></i><span>Hot Deals</span></a>
+                        <a href="#" class="text-dark">Home</a>
+                        <a href="#" class="hover:text-brand">About</a>
+                        <a href="#" class="hover:text-brand">Shop</a>
+                        <a href="#" class="hover:text-brand">Vendors</a>
+                        <a href="#" class="hover:text-brand">Mega menu</a>
+                        <a href="#" class="hover:text-brand">Blog</a>
+                        <a href="#" class="hover:text-brand">Pages</a>
+                        <a href="#" class="hover:text-brand">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-700">
+                    <i class="fas fa-headset text-3xl text-brand"></i>
+                    <div>
+                        <div class="text-brand font-extrabold text-2xl">1900 - 888</div>
+                        <div class="text-xs text-brand">24/7 Support Center</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- =================================================
+    HEADER END
+    ================================================== -->
+
+    <!-- =================================================
+    MAIN CONTENT START
+    ================================================== -->
+    <main class="container mx-auto px-4 py-8">
+        
+        <!-- Breadcrumbs -->
+        <div class="text-sm text-gray-500 mb-6">
+            <a href="index.html" class="hover:text-brand">Home</a> > 
+            <a href="product.html" class="hover:text-brand">Shop</a> > 
+            <span class="text-gray-800">Checkout</span>
+        </div>
+
+        <!-- Checkout Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Left Side: Billing & Shipping Details -->
+            <div class="lg:col-span-7">
+                <h2 class="text-3xl font-bold mb-6">Billing Details</h2>
+                <form action="#" class="space-y-4">
+                    <!-- Name Fields -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="first-name" class="block text-sm font-medium mb-1">First Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="first-name" class="form-input" required>
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm font-medium mb-1">Last Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="last-name" class="form-input" required>
+                        </div>
+                    </div>
+                    <!-- Address -->
+                     <div>
+                        <label for="address" class="block text-sm font-medium mb-1">Address <span class="text-red-500">*</span></label>
+                        <input type="text" id="address" class="form-input" placeholder="House number and street name" required>
+                    </div>
+                    <!-- City -->
+                     <div>
+                        <label for="city" class="block text-sm font-medium mb-1">Town / City <span class="text-red-500">*</span></label>
+                        <input type="text" id="city" class="form-input" required>
+                    </div>
+                    <!-- State & Postcode -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="state" class="block text-sm font-medium mb-1">State / County</label>
+                            <input type="text" id="state" class="form-input">
+                        </div>
+                        <div>
+                            <label for="postcode" class="block text-sm font-medium mb-1">Postcode / ZIP</label>
+                            <input type="text" id="postcode" class="form-input">
+                        </div>
+                    </div>
+                    <!-- Phone & Email -->
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-1">Phone <span class="text-red-500">*</span></label>
+                            <input type="tel" id="phone" class="form-input" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-1">Email address <span class="text-red-500">*</span></label>
+                            <input type="email" id="email" class="form-input" required>
+                        </div>
+                    </div>
+                    <!-- Create Account Checkbox -->
+                    <div class="flex items-center">
+                        <input type="checkbox" id="create-account-checkbox" class="h-4 w-4 rounded border-gray-300 text-brand focus:ring-brand">
+                        <label for="create-account-checkbox" class="ml-2 block text-sm">Create an account?</label>
+                    </div>
+                    <!-- Password fields (hidden by default) -->
+                    <div id="create-account-fields" class="hidden-section space-y-4 pt-4">
+                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="password" class="block text-sm font-medium mb-1">Password</label>
+                                <input type="password" id="password" class="form-input">
+                            </div>
+                            <div>
+                                <label for="confirm-password" class="block text-sm font-medium mb-1">Confirm Password</label>
+                                <input type="password" id="confirm-password" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Different Address Checkbox -->
+                     <div class="flex items-center border-t pt-4">
+                        <input type="checkbox" id="ship-different-address-checkbox" class="h-4 w-4 rounded border-gray-300 text-brand focus:ring-brand">
+                        <label for="ship-different-address-checkbox" class="ml-2 block text-sm">Ship to a different address?</label>
+                    </div>
+                    <!-- Shipping Form (hidden by default) -->
+                    <div id="shipping-address-form" class="hidden-section space-y-4 pt-4">
+                         <h3 class="text-xl font-bold">Shipping Address</h3>
+                         <!-- Shipping form fields can be added here, similar to billing -->
+                         <p class="text-gray-500">You can add shipping address form fields here.</p>
+                    </div>
+                    <!-- Order Notes -->
+                     <div>
+                        <label for="order-notes" class="block text-sm font-medium mb-1">Order notes (optional)</label>
+                        <textarea id="order-notes" rows="4" class="form-input" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right Side: Your Order -->
+            <div class="lg:col-span-5">
+                <div class="border rounded-lg p-6 bg-gray-50">
+                    <h2 class="text-3xl font-bold mb-6">Your Order</h2>
+                    <div class="space-y-4">
+                        <!-- Product Row -->
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <div class="flex items-center space-x-3">
+                                <img src="https://placehold.co/60x60/F2F3F4/333?text=Product" alt="product" class="rounded">
+                                <div>
+                                    <p class="font-semibold">Seeds of Change Organic</p>
+                                    <p class="text-sm text-gray-500">x 1</p>
+                                </div>
+                            </div>
+                            <p class="font-bold text-gray-700">$28.85</p>
+                        </div>
+                         <!-- Product Row -->
+                        <div class="flex justify-between items-center border-b pb-2">
+                             <div class="flex items-center space-x-3">
+                                <img src="https://placehold.co/60x60/E0F2E9/333?text=Product" alt="product" class="rounded">
+                                <div>
+                                    <p class="font-semibold">All Natural Italian-Style Chicken</p>
+                                    <p class="text-sm text-gray-500">x 1</p>
+                                </div>
+                            </div>
+                            <p class="font-bold text-gray-700">$52.85</p>
+                        </div>
+                         <!-- Subtotal -->
+                        <div class="flex justify-between font-semibold border-b pb-2">
+                            <p>Subtotal</p>
+                            <p>$81.70</p>
+                        </div>
+                        <!-- Shipping -->
+                         <div class="flex justify-between font-semibold border-b pb-2">
+                            <p>Shipping</p>
+                            <p>Free</p>
+                        </div>
+                        <!-- Total -->
+                        <div class="flex justify-between font-bold text-xl text-brand">
+                            <p>Total</p>
+                            <p>$81.70</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Coupon Code -->
+                    <div class="mt-8 border-t pt-6">
+                        <div class="flex">
+                            <input type="text" placeholder="Coupon code" class="form-input rounded-r-none">
+                            <button class="bg-brand text-white px-6 rounded-l-none rounded-r-md hover:bg-green-600 transition-colors font-semibold">Apply</button>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="mt-8 border-t pt-6">
+                        <div class="space-y-4">
+                            <!-- Bank Transfer -->
+                            <div>
+                                <input type="radio" id="bank-transfer" name="payment" class="mr-2 h-4 w-4 text-brand focus:ring-brand">
+                                <label for="bank-transfer" class="font-semibold">Direct Bank Transfer</label>
+                            </div>
+                             <!-- Cash on Delivery -->
+                             <div>
+                                <input type="radio" id="cod" name="payment" class="mr-2 h-4 w-4 text-brand focus:ring-brand" checked>
+                                <label for="cod" class="font-semibold">Cash on delivery</label>
+                            </div>
+                             <!-- PayPal -->
+                             <div>
+                                <input type="radio" id="paypal" name="payment" class="mr-2 h-4 w-4 text-brand focus:ring-brand">
+                                <label for="paypal" class="font-semibold">PayPal</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Place Order Button -->
+                    <button class="bg-brand text-white w-full font-bold text-lg mt-8 py-4 rounded-md hover:bg-green-600 transition-colors">
+                        Place Order
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <!-- =================================================
+    MAIN CONTENT END
+    ================================================== -->
+
+    <!-- =================================================
+    FOOTER START
+    ================================================== -->
+  <!-- Footer -->
+    <footer class="bg-gray-50 pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
+                <!-- Column 1: Logo & Info -->
+                <div class="lg:col-span-2">
+                    <a href="#" class="text-3xl font-bold text-brand mb-4 inline-block">
+                        <i class="fa fa-shopping-basket" aria-hidden="true"></i> Fast Grocery
+                        
+                    </a>
+                    <p class="text-gray-600 mb-4">Awesome grocery store website template</p>
+                    <p class="text-gray-600 flex items-start mb-2"><i class="fas fa-map-marker-alt text-brand mt-1 mr-2"></i><strong>Address:</strong> 5171 W Campbell Ave undefined Kent, Utah 53127 United States</p>
+                    <p class="text-gray-600 flex items-start mb-2"><i class="fas fa-headset text-brand mt-1 mr-2"></i><strong>Call Us:</strong> (+91) - 540-025-124553</p>
+                    <p class="text-gray-600 flex items-start mb-2"><i class="fas fa-paper-plane text-brand mt-1 mr-2"></i><strong>Email:</strong> sale@Fast Grocery.com</p>
+                    <p class="text-gray-600 flex items-start mb-2"><i class="fas fa-clock text-brand mt-1 mr-2"></i><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                </div>
+
+                <!-- Column 2-5: Links -->
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-brand">About Us</a></li>
+                        <li><a href="#" class="hover:text-brand">Delivery Information</a></li>
+                        <li><a href="#" class="hover:text-brand">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-brand">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-brand">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-brand">Support Center</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="font-bold text-xl mb-4">Account</h3>
+                     <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-brand">Sign In</a></li>
+                        <li><a href="#" class="hover:text-brand">View Cart</a></li>
+                        <li><a href="#" class="hover:text-brand">My Wishlist</a></li>
+                        <li><a href="#" class="hover:text-brand">Track My Order</a></li>
+                        <li><a href="#" class="hover:text-brand">Help Ticket</a></li>
+                        <li><a href="#" class="hover:text-brand">Shipping Details</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="font-bold text-xl mb-4">Corporate</h3>
+                     <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-brand">Become a Vendor</a></li>
+                        <li><a href="#" class="hover:text-brand">Affiliate Program</a></li>
+                        <li><a href="#" class="hover:text-brand">Farm Business</a></li>
+                        <li><a href="#" class="hover:text-brand">Farm Careers</a></li>
+                        <li><a href="#" class="hover:text-brand">Our Suppliers</a></li>
+                        <li><a href="#" class="hover:text-brand">Accessibility</a></li>
+                    </ul>
+                </div>
+                <!-- Column 6: Install App -->
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Install App</h3>
+                    <p class="text-gray-600 mb-4">From App Store or Google Play</p>
+                    <div class="flex space-x-2 mb-4">
+                        <a href="#"><img src="https://placehold.co/120x40?text=App+Store" alt="App Store" class="h-10"></a>
+                        <a href="#"><img src="https://placehold.co/120x40?text=Google+Play" alt="Google Play" class="h-10"></a>
+                    </div>
+                    <p class="text-gray-600 mb-2">Secured Payment Gateways</p>
+                    <img src="https://placehold.co/200x30?text=Payment+Methods" alt="Payment Gateways">
+                </div>
+            </div>
+            
+            <div class="border-t pt-8 flex flex-wrap justify-between items-center text-sm text-gray-500">
+                 <p>&copy; 2025, Fast Grocery - HTML CSS Ecommerce Template. All rights reserved</p>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                     
+                </div>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                    <span class="font-semibold">Follow us</span>
+                    <a href="#" class="text-brand hover:text-green-700"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-brand hover:text-green-700"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-brand hover:text-green-700"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-brand hover:text-green-700"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="text-brand hover:text-green-700"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =================================================
+    FOOTER END
+    ================================================== -->
+
+    <!-- =================================================
+    JAVASCRIPT START
+    ================================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get checkbox elements
+            const createAccountCheckbox = document.getElementById('create-account-checkbox');
+            const shipDifferentAddressCheckbox = document.getElementById('ship-different-address-checkbox');
+
+            // Get the sections to toggle
+            const accountFields = document.getElementById('create-account-fields');
+            const shippingForm = document.getElementById('shipping-address-form');
+
+            /**
+             * Toggles the visibility of a given section with a smooth animation.
+             * @param {HTMLElement} section - The section to show or hide.
+             * @param {boolean} isChecked - The state of the controlling checkbox.
+             */
+            function toggleSection(section, isChecked) {
+                if (isChecked) {
+                    section.style.display = 'block';
+                    // Use a timeout to allow the display property to apply before changing max-height
+                    setTimeout(() => {
+                        section.style.maxHeight = section.scrollHeight + 'px';
+                    }, 10);
+                } else {
+                    section.style.maxHeight = '0';
+                    // Listen for the transition to end before hiding the element completely
+                    section.addEventListener('transitionend', function() {
+                        if (section.style.maxHeight === '0px') {
+                            section.style.display = 'none';
+                        }
+                    }, { once: true });
+                }
+            }
+
+            // Event listener for the 'Create Account' checkbox
+            if (createAccountCheckbox && accountFields) {
+                createAccountCheckbox.addEventListener('change', function() {
+                    toggleSection(accountFields, this.checked);
+                });
+            }
+
+            // Event listener for the 'Ship to Different Address' checkbox
+            if (shipDifferentAddressCheckbox && shippingForm) {
+                shipDifferentAddressCheckbox.addEventListener('change', function() {
+                    toggleSection(shippingForm, this.checked);
+                });
+            }
+        });
+    </script>
+    <!-- =================================================
+    JAVASCRIPT END
+    ================================================== -->
+
+</body>
+</html>
+

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Grocery - Your Daily Needs</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Quicksand) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+   
+</head>
+<body class="bg-white">
+
+    <!-- Header Section -->
+    <header class="border-b">
+        <!-- Top Header -->
+        <div class="hidden lg:block border-b py-2 text-sm text-gray-500">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="flex space-x-6">
+                    <a href="#" class="header-top-link">About Us</a>
+                    <a href="#" class="header-top-link">My Account</a>
+                    <a href="#" class="header-top-link">Wishlist</a>
+                    <a href="#" class="header-top-link">Order Tracking</a>
+                </div>
+                <div class="flex items-center space-x-6"> 
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-globe"></i>
+                        <span>English</span>
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </div>
+                     <div class="flex items-center space-x-2">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>USD</span>
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="py-6">
+            <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+                <a href="#" class="text-3xl font-bold text-brand mb-4 md:mb-0">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i> Fast Grocery
+                </a>
+                <div class="w-full lg:w-1/2 order-3 lg:order-2 mt-4 lg:mt-0">
+                    <form class="flex border-2 border-brand rounded-md overflow-hidden">
+                        <select class="px-4 py-2 border-r text-gray-600 hidden md:block">
+                            <option>All Categories</option>
+                            <option>Fruits</option>
+                            <option>Vegetables</option>
+                        </select>
+                        <input type="text" placeholder="Search for items..." class="w-full px-4 py-3 focus:outline-none">
+                        <button type="submit" class="bg-brand text-white px-6">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="order-2 lg:order-3 flex items-center space-x-4">
+                      
+                    <a href="#" class="flex items-center space-x-1 text-gray-600 hover:text-brand">
+                        <i class="fas fa-shopping-cart text-2xl text-brand"></i>
+                        <span class="bg-brand text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">2</span>
+                        <span class="hidden md:block">Cart</span>
+                    </a>
+                    <a href="#" class="flex items-center space-x-1 text-gray-600 hover:text-brand">
+                        <i class="far fa-user text-2xl text-brand"></i>
+                        <span class="hidden md:block">Account</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="border-t hidden lg:block" style="background: #f5f5f5;">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="#" class="bg-brand  text-white px-6 py-4 font-bold flex items-center space-x-2">
+                        <i class="fas fa-th-large"></i>
+                        <span>Browse All Categories</span>
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </a>
+                    <div class="flex items-center space-x-8 ml-8 font-semibold text-gray-700">
+                        <a href="#" class="flex items-center space-x-1 hover:text-brand"><i class="fas fa-fire text-dark"></i><span>Hot Deals</span></a>
+                        <a href="#" class="text-dark">Home</a>
+                        <a href="#" class="hover:text-brand">About</a>
+                        <a href="#" class="hover:text-brand">Shop</a>
+                        <a href="#" class="hover:text-brand">Vendors</a>
+                        <a href="#" class="hover:text-brand">Mega menu</a>
+                        <a href="#" class="hover:text-brand">Blog</a>
+                        <a href="#" class="hover:text-brand">Pages</a>
+                        <a href="#" class="hover:text-brand">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-700">
+                    <i class="fas fa-headset text-3xl text-brand"></i>
+                    <div>
+                        <div class="text-brand font-extrabold text-2xl">1900 - 888</div>
+                        <div class="text-xs text-brand">24/7 Support Center</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- =================================================
+    MAIN CONTENT START
+    ================================================== -->
+    <main class="container mx-auto px-4 py-8">
+        
+        <!-- Breadcrumbs -->
+        <div class="text-sm text-gray-500 mb-6">
+            <a href="index.html" class="hover:text-brand">Home</a> > 
+            <a href="#" class="hover:text-brand">Vegetables</a> > 
+            <span class="text-gray-800">Seeds of Change Organic</span>
+        </div>
+
+        <!-- Product Details Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+            <!-- Product Image Gallery -->
+            <div>
+                <div class="border rounded-lg p-4 mb-4">
+                    <img id="main-product-image" src="https://placehold.co/600x600/F2F3F4/333?text=Product+Image+1" alt="Product Image" class="w-full h-auto rounded-lg">
+                </div>
+                <div class="flex space-x-2">
+                    <img src="https://placehold.co/100x100/F2F3F4/333?text=Thumb+1" alt="Thumbnail 1" class="thumbnail-image w-24 h-24 border-2 border-brand rounded-lg cursor-pointer">
+                    <img src="https://placehold.co/100x100/E0F2E9/333?text=Thumb+2" alt="Thumbnail 2" class="thumbnail-image w-24 h-24 border rounded-lg cursor-pointer hover:border-brand">
+                    <img src="https://placehold.co/100x100/FFF5E1/333?text=Thumb+3" alt="Thumbnail 3" class="thumbnail-image w-24 h-24 border rounded-lg cursor-pointer hover:border-brand">
+                    <img src="https://placehold.co/100x100/F2E0E6/333?text=Thumb+4" alt="Thumbnail 4" class="thumbnail-image w-24 h-24 border rounded-lg cursor-pointer hover:border-brand">
+                </div>
+            </div>
+
+            <!-- Product Information -->
+            <div>
+                <span class="text-red-500 bg-red-100 px-2 py-1 text-xs font-bold rounded">Sale Off</span>
+                <h1 class="text-4xl font-bold my-4">Seeds of Change Organic Quinoa, Brown, & Red Rice</h1>
+                <div class="flex items-center mb-4">
+                    <div class="text-yellow-400">
+                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i>
+                    </div>
+                    <a href="#reviews-section" class="text-sm text-gray-500 ml-2 hover:text-brand">(32 reviews)</a>
+                </div>
+                <div class="flex items-baseline mb-6">
+                    <span class="text-brand text-4xl font-bold">$28.85</span>
+                    <span class="text-gray-400 line-through text-2xl ml-4">$32.80</span>
+                </div>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rem officia, corrupti reiciendis minima nisi modi, quasi, odio minus dolore impedit fuga eum eligendi.
+                </p>
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="flex items-center border rounded-md">
+                        <button id="quantity-minus" class="px-4 py-2 text-lg hover:bg-gray-100">-</button>
+                        <input id="quantity-input" type="text" value="1" class="w-12 text-center border-l border-r focus:outline-none">
+                        <button id="quantity-plus" class="px-4 py-2 text-lg hover:bg-gray-100">+</button>
+                    </div>
+                    <button class="bg-brand text-white font-bold px-8 py-3 rounded-md hover:bg-green-600 transition-colors flex items-center">
+                        <i class="fas fa-shopping-cart mr-2"></i> Add to cart
+                    </button>
+                    <button class="border p-3 rounded-md hover:border-brand hover:text-brand transition-colors">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                <div class="text-sm text-gray-500">
+                    <p><span class="font-bold text-gray-800">SKU:</span> FWM15VKT</p>
+                    <p><span class="font-bold text-gray-800">Category:</span> <a href="#" class="text-brand">Vegetables</a></p>
+                    <p><span class="font-bold text-gray-800">Tags:</span> <a href="#" class="text-brand">Organic</a>, <a href="#" class="text-brand">Brown Rice</a>, <a href="#" class="text-brand">Healthy</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Tabs: Description, Info, Reviews -->
+        <section id="reviews-section" class="mb-12">
+            <div class="border-b mb-6">
+                <nav class="flex space-x-8">
+                    <button class="tab-button active text-lg font-bold py-4 border-b-2 border-transparent" data-tab="description">Description</button>
+                    <button class="tab-button text-lg font-bold py-4 border-b-2 border-transparent text-gray-500" data-tab="additional-info">Additional Info</button>
+                    <button class="tab-button text-lg font-bold py-4 border-b-2 border-transparent text-gray-500" data-tab="reviews">Reviews (32)</button>
+                </nav>
+            </div>
+            
+            <!-- Description Tab Content -->
+            <div id="description" class="tab-content text-gray-600 leading-relaxed">
+                <p>Uninhibited carnally hired played in whimpered dear gorilla koala depending and much yikes emotionally signed more communicative however far crud pesky thatдал lucidly under watchful hugging dear poignant sophisticated goodness animosities flying fancifully this rule.</p>
+                <p class="mt-4">Spluttered narrowly yikes left moth in yikes bowed this that grizzly much hello on spoon-fed that alas rethought much decently richly and wow against the frequent fluidly at formidable acceptably flapped besides and much circa far over the bucolically hey precarious goldfinch mastodon goodness gnashed a jellyfish and one however because.</p>
+            </div>
+
+            <!-- Additional Info Tab Content -->
+            <div id="additional-info" class="tab-content hidden">
+                <table class="w-full text-left">
+                    <tbody>
+                        <tr class="border-b">
+                            <th class="py-2 font-medium">Weight</th>
+                            <td class="py-2 text-gray-600">0.5 kg</td>
+                        </tr>
+                        <tr class="border-b">
+                            <th class="py-2 font-medium">Dimensions</th>
+                            <td class="py-2 text-gray-600">10 x 5 x 15 cm</td>
+                        </tr>
+                        <tr class="border-b">
+                            <th class="py-2 font-medium">Country of Origin</th>
+                            <td class="py-2 text-gray-600">USA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Reviews Tab Content -->
+            <div id="reviews" class="tab-content hidden">
+                <h3 class="text-2xl font-bold mb-6">Customer reviews</h3>
+                <!-- Review Item -->
+                <div class="flex space-x-4 border-b pb-6 mb-6">
+                    <img src="https://placehold.co/60x60/E0F2E9/333?text=User" alt="User" class="w-16 h-16 rounded-full">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h4 class="font-bold">Jacky Chan</h4>
+                                <p class="text-sm text-gray-400">June 4, 2025 at 3:12 pm</p>
+                            </div>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, suscipit exercitationem accusantium obcaecati quos voluptate nesciunt facilis itaque modi commodi dignissimos sequi repudiandae minus ab deleniti totam officia id incidunt?</p>
+                    </div>
+                </div>
+                 <!-- Add Review Form -->
+                <h3 class="text-2xl font-bold mb-4">Add a review</h3>
+                <form>
+                    <div class="mb-4">
+                        <label class="block mb-2">Your rating</label>
+                        <!-- Star rating input can be added here -->
+                    </div>
+                    <textarea rows="5" placeholder="Write your review" class="w-full p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-brand"></textarea>
+                    <button type="submit" class="mt-4 bg-brand text-white font-bold px-8 py-3 rounded-md hover:bg-green-600 transition-colors">Submit Review</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Related Products Section -->
+        <section>
+            <h2 class="text-3xl font-bold mb-6">Related products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Product Card Example -->
+                <div class="product-card rounded-lg overflow-hidden p-4">
+                    <img src="https://placehold.co/200x200/F2F3F4/333?text=Product" alt="Product" class="mx-auto mb-4">
+                    <p class="text-xs text-gray-400">Snack</p>
+                    <h3 class="font-bold text-md mb-2 h-12">Angie's Boomchickapop Sweet & Salty</h3>
+                    <div class="flex items-center mb-2">
+                        <div class="text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                        <span class="text-sm text-gray-500 ml-2">(3.0)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-brand font-bold text-lg">$20.50</span>
+                        </div>
+                        <a href="#" class="bg-green-100 text-brand font-bold px-4 py-2 rounded hover:bg-brand hover:text-white transition-colors"><i class="fas fa-shopping-cart mr-1"></i> Add</a>
+                    </div>
+                </div>
+                 <!-- Repeat Product Card for other related products -->
+            </div>
+        </section>
+
+    </main>
+    <!-- =================================================
+    MAIN CONTENT END
+    ================================================== -->
+
+    <!-- =================================================
+    FOOTER START
+    ================================================== -->
+     <!-- Footer -->
+    <footer class="bg-gray-50 pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
+                <!-- Column 1: Logo & Info -->
+                <div class="lg:col-span-2">
+                    <a href="#" class="text-3xl font-bold text-brand mb-4 inline-block">
+                        <i class="fa fa-shopping-basket" aria-hidden="true"></i> Fast Grocery
+                        
+                    </a>
+                    <p class="text-gray-600 mb-4">Awesome grocery store website template</p>
+                    <p class="text-gray-600 flex items-start mb-2"><i class="fas fa-map-marker-alt text-brand mt-1 mr-2"></i><strong>Address:</strong> 5171 W Campbell Ave undefined Kent, Utah 53127 United States</p>
+                    <p class="text-gray-600 flex items-start mb-2"><i class="fas fa-headset text-brand mt-1 mr-2"></i><strong>Call Us:</strong> (+91) - 540-025-124553</p>
+                    <p class="text-gray-600 flex items-start mb-2"><i class="fas fa-paper-plane text-brand mt-1 mr-2"></i><strong>Email:</strong> sale@Fast Grocery.com</p>
+                    <p class="text-gray-600 flex items-start mb-2"><i class="fas fa-clock text-brand mt-1 mr-2"></i><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                </div>
+
+                <!-- Column 2-5: Links -->
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-brand">About Us</a></li>
+                        <li><a href="#" class="hover:text-brand">Delivery Information</a></li>
+                        <li><a href="#" class="hover:text-brand">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-brand">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-brand">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-brand">Support Center</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="font-bold text-xl mb-4">Account</h3>
+                     <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-brand">Sign In</a></li>
+                        <li><a href="#" class="hover:text-brand">View Cart</a></li>
+                        <li><a href="#" class="hover:text-brand">My Wishlist</a></li>
+                        <li><a href="#" class="hover:text-brand">Track My Order</a></li>
+                        <li><a href="#" class="hover:text-brand">Help Ticket</a></li>
+                        <li><a href="#" class="hover:text-brand">Shipping Details</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="font-bold text-xl mb-4">Corporate</h3>
+                     <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-brand">Become a Vendor</a></li>
+                        <li><a href="#" class="hover:text-brand">Affiliate Program</a></li>
+                        <li><a href="#" class="hover:text-brand">Farm Business</a></li>
+                        <li><a href="#" class="hover:text-brand">Farm Careers</a></li>
+                        <li><a href="#" class="hover:text-brand">Our Suppliers</a></li>
+                        <li><a href="#" class="hover:text-brand">Accessibility</a></li>
+                    </ul>
+                </div>
+                <!-- Column 6: Install App -->
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Install App</h3>
+                    <p class="text-gray-600 mb-4">From App Store or Google Play</p>
+                    <div class="flex space-x-2 mb-4">
+                        <a href="#"><img src="https://placehold.co/120x40?text=App+Store" alt="App Store" class="h-10"></a>
+                        <a href="#"><img src="https://placehold.co/120x40?text=Google+Play" alt="Google Play" class="h-10"></a>
+                    </div>
+                    <p class="text-gray-600 mb-2">Secured Payment Gateways</p>
+                    <img src="https://placehold.co/200x30?text=Payment+Methods" alt="Payment Gateways">
+                </div>
+            </div>
+            
+            <div class="border-t pt-8 flex flex-wrap justify-between items-center text-sm text-gray-500">
+                 <p>&copy; 2025, Fast Grocery - HTML CSS Ecommerce Template. All rights reserved</p>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                     
+                </div>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                    <span class="font-semibold">Follow us</span>
+                    <a href="#" class="text-brand hover:text-green-700"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-brand hover:text-green-700"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-brand hover:text-green-700"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-brand hover:text-green-700"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="text-brand hover:text-green-700"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =================================================
+    FOOTER END
+    ================================================== -->
+
+
+    <!-- =================================================
+    JAVASCRIPT START
+    ================================================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- Product Image Gallery Logic ---
+            const mainImage = document.getElementById('main-product-image');
+            const thumbnails = document.querySelectorAll('.thumbnail-image');
+
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', () => {
+                    // Update main image src. Replace dimensions for a higher quality image.
+                    mainImage.src = thumbnail.src.replace('100x100', '600x600');
+                    
+                    // Update border style for active thumbnail
+                    thumbnails.forEach(t => t.classList.remove('border-brand'));
+                    thumbnail.classList.add('border-brand');
+                });
+            });
+
+            // --- Quantity Counter Logic ---
+            const quantityInput = document.getElementById('quantity-input');
+            const minusBtn = document.getElementById('quantity-minus');
+            const plusBtn = document.getElementById('quantity-plus');
+
+            if(minusBtn && plusBtn && quantityInput) {
+                minusBtn.addEventListener('click', () => {
+                    let currentValue = parseInt(quantityInput.value);
+                    if (currentValue > 1) {
+                        quantityInput.value = currentValue - 1;
+                    }
+                });
+
+                plusBtn.addEventListener('click', () => {
+                    let currentValue = parseInt(quantityInput.value);
+                    quantityInput.value = currentValue + 1;
+                });
+            }
+
+
+            // --- Tabs Logic ---
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.dataset.tab;
+
+                    // Update button styles to show active tab
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active', 'text-brand');
+                        btn.classList.add('text-gray-500');
+                    });
+                    button.classList.add('active', 'text-brand');
+                    button.classList.remove('text-gray-500');
+
+                    // Show the selected tab content and hide others
+                    tabContents.forEach(content => {
+                        if (content.id === tabId) {
+                            content.classList.remove('hidden');
+                        } else {
+                            content.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <!-- =================================================
+    JAVASCRIPT END
+    ================================================== -->
+
+</body>
+</html>
+
